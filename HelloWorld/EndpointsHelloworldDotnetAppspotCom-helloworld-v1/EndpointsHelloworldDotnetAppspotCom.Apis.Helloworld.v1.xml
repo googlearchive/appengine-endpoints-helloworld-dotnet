@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1</name>
+    </assembly>
+    <members>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.Data.HelloGreeting.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.Data.HelloGreetingCollection.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService">
+            <summary>The Helloworld Service.</summary>
+        </member>
+        <member name="F:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.Version">
+            <summary>The API version.</summary>
+        </member>
+        <member name="F:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.DiscoveryVersionUsed">
+            <summary>The discovery version used to generate this service.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.#ctor">
+            <summary>Constructs a new service.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.#ctor(Google.Apis.Services.BaseClientService.Initializer)">
+            <summary>Constructs a new service.</summary>
+            <param name="initializer">The service initializer.</param>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.Features">
+            <summary>Gets the service supported features.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.Name">
+            <summary>Gets the service name.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.BaseUri">
+            <summary>Gets the service base URI.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.BasePath">
+            <summary>Gets the service base path.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.Greetings">
+            <summary>Gets the Greetings resource.</summary>
+        </member>
+        <member name="T:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.Scope">
+            <summary>Available OAuth 2.0 scopes for use with the helloworld.</summary>
+        </member>
+        <member name="F:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldService.Scope.UserinfoEmail">
+            <summary>View your email address</summary>
+        </member>
+        <member name="T:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1">
+            <summary>A base abstract class for Helloworld requests.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new HelloworldBaseServiceRequest instance.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.InitParameters">
+            <summary>Initializes Helloworld parameter list.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.Alt">
+            <summary>Data format for the response.</summary>
+            [default: json]
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.Key">
+            <summary>API key. Your API key identifies your project and provides you with API access, quota, and reports.
+            Required unless you provide an OAuth 2.0 token.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+            [default: true]
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.QuotaUser">
+            <summary>Available to use for quota purposes for server-side applications. Can be any arbitrary string
+            assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.UserIp">
+            <summary>IP address of the site where the request originates. Use this if you want to enforce per-user
+            limits.</summary>
+        </member>
+        <member name="T:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.AltEnum">
+            <summary>Data format for the response.</summary>
+        </member>
+        <member name="F:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.HelloworldBaseServiceRequest`1.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="T:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource">
+            <summary>The "greetings" collection of methods.</summary>
+        </member>
+        <member name="F:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.GetGreeting(System.Int32)">
+            <param name="id"></param>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.Multiply(EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.Data.HelloGreeting,System.Int32)">
+            <param name="body">The body of the request.</param>
+            <param name="times"></param>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.AuthedRequest.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new Authed request.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.AuthedRequest.InitParameters">
+            <summary>Initializes Authed parameter list.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.AuthedRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.AuthedRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.AuthedRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.GetGreetingRequest.#ctor(Google.Apis.Services.IClientService,System.Int32)">
+            <summary>Constructs a new GetGreeting request.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.GetGreetingRequest.InitParameters">
+            <summary>Initializes GetGreeting parameter list.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.GetGreetingRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.GetGreetingRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.GetGreetingRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.ListGreetingRequest.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new ListGreeting request.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.ListGreetingRequest.InitParameters">
+            <summary>Initializes ListGreeting parameter list.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.ListGreetingRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.ListGreetingRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.ListGreetingRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.MultiplyRequest.#ctor(Google.Apis.Services.IClientService,EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.Data.HelloGreeting,System.Int32)">
+            <summary>Constructs a new Multiply request.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.MultiplyRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.MultiplyRequest.InitParameters">
+            <summary>Initializes Multiply parameter list.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.MultiplyRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.MultiplyRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.MultiplyRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.GreetingsResource.MultiplyRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+    </members>
+</doc>

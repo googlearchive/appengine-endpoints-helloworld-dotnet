@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1</id>
+        <version>1.8.1.00</version>
+        <title>EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1 Client Library</title>
+        <authors>endpoints_helloworld_dotnet_appspot_com</authors>
+        <owners></owners>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <projectUrl>https://code.google.com/p/google-api-dotnet-client/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>endpoints_helloworld_dotnet_appspot_com APIs Client Library for working with Helloworld v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 7.5 and 8
+
+          - Portable Class Libraries
+        </description>
+        <tags>endpoints_helloworld_dotnet_appspot_com</tags>
+        <dependencies>
+            <group>
+                <dependency id="Google.Apis" version="1.8.1" />
+                <dependency id="Google.Apis.Auth" version="1.8.1" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.dll" target="lib\portable-net4+sl4+wp71+win8\EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.dll" />
+        <file src="bin\Release\EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.pdb" target="lib\portable-net4+sl4+wp71+win8\EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.pdb" />
+        <file src="bin\Release\EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.xml" target="lib\portable-net4+sl4+wp71+win8\EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1.xml" />
+    </files>
+</package>
