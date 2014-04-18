@@ -1,2 +1,2 @@
-appengine--endpoints-helloworld-dotnet
+appengine-endpoints-helloworld-dotnet
 ======================================
