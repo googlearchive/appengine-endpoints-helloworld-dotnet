@@ -48,8 +48,8 @@ namespace HelloWorld
             var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
                 new ClientSecrets
                 {
-                    ClientId = "YOUR_CLIENT_ID", // Update this variable with your client id.
-                    ClientSecret = "YOUR_CLIENT_SECRET", // Update this variable with your client secret.
+                    ClientId = ClientSecretsConsts.ClientId,
+                    ClientSecret = ClientSecretsConsts.ClientSecret,
                 },
                 new[] { HelloworldService.Scope.UserinfoEmail },
                 "user",
