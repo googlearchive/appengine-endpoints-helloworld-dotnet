@@ -17,12 +17,10 @@ This example also uses [Google.Apis][2] and [Google.Apis.Auth][3] NuGet packages
 - [Google Cloud Endpoints for Windows Phone][6]
 
 ## Setup Instructions
-1. Open `TicTacToeSample.xcodeproj` in Xcode.
-2. Modify `kMyClientId` and `kMyClientSecret` in `ViewController.m` to include
-   the web client ID and client secret you registered in the [APIs Console][6].
-3. Modify `GTLServiceTictactoe.m` (line 44) to point to the location where you
-   are hosting a Tic Tac Toe backend (based off of the
-   [Java backend example][7]).
+1. Open `HelloWorld.sln` in Visual Studio
+2. Modify `ClientId` and `ClientSecrets` in `ClientSecretsConsts.cs` to include
+   the installed client ID and client secret you registered in the [Google Developers Console][7].
+3. Run the [Hello World java backend example][8].
 4. Run the application.
 
 
@@ -32,3 +30,5 @@ This example also uses [Google.Apis][2] and [Google.Apis.Auth][3] NuGet packages
 [4]: https://developers.google.com/appengine/
 [5]: http://msdn.microsoft.com/en-us/library/618ayhy6(v=vs.71).aspx
 [6]: https://devsite.googleplex.com/appengine/docs/java/endpoints/consume_wp
+[7]: https://console.developers.google.com
+[8]: https://github.com/GoogleCloudPlatform/appengine-endpoints-helloendpoints-java-maven
