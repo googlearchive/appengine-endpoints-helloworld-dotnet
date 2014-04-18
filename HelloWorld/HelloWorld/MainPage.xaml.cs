@@ -22,11 +22,16 @@ namespace HelloWorld
 
         private async void List_Click(object sender, RoutedEventArgs e)
         {
+            // Create the service.
             var service = new HelloworldService(new BaseClientService.Initializer()
                 {
                     ApplicationName = "Hello World Endpoints Sample",
                 });
+
+            // Execute the request.
             var response = await service.Greetings.ListGreeting().ExecuteAsync();
+
+            // Update a UI control with the response.
             ResponseTextBlock.Text = String.Join(Environment.NewLine,
                 from item in response.Items
                 select item.Message);
