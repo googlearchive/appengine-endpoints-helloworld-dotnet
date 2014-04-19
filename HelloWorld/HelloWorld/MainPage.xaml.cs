@@ -40,9 +40,9 @@ namespace HelloWorld
         private async void Greet_Click(object sender, RoutedEventArgs e)
         {
             var service = new HelloworldService(new BaseClientService.Initializer()
-            {
-                ApplicationName = "Hello World Endpoints Sample",
-            });
+                {
+                    ApplicationName = "Hello World Endpoints Sample",
+                });
             var response = await service.Greetings.GetGreeting(0).ExecuteAsync();
             ResponseTextBlock.Text = response.Message;
         }
@@ -62,10 +62,10 @@ namespace HelloWorld
 
             // Create the service.
             var service = new HelloworldService(new BaseClientService.Initializer()
-            {
-                HttpClientInitializer = credential,
-                ApplicationName = "Hello World Endpoints Sample",
-            });
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Hello World Endpoints Sample",
+                });
 
             // Execute the request.
             var response = await service.Greetings.Authed().ExecuteAsync();
