@@ -28,7 +28,7 @@ This example also uses [Google.Apis][2] and [Google.Apis.Auth][3] NuGet packages
 [2]: http://www.nuget.org/packages/Google.Apis/
 [3]: http://www.nuget.org/packages/Google.Apis.Auth/
 [4]: https://developers.google.com/appengine/
-[5]: http://msdn.microsoft.com/en-us/library/618ayhy6(v=vs.71).aspx
+[5]: http://msdn.microsoft.com/en-us/library/kx37x362(v=vs.110).aspx
 [6]: https://devsite.googleplex.com/appengine/docs/java/endpoints/consume_wp
 [7]: https://console.developers.google.com
 [8]: https://github.com/GoogleCloudPlatform/appengine-endpoints-helloendpoints-java-maven
