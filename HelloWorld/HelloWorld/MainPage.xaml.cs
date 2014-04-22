@@ -20,6 +20,7 @@ namespace HelloWorld
             //BuildLocalizedApplicationBar();
         }
 
+        // [START list]
         private async void List_Click(object sender, RoutedEventArgs e)
         {
             // [START service]
@@ -38,7 +39,9 @@ namespace HelloWorld
                 from item in response.Items
                 select item.Message);
         }
+        // [END list]
 
+        // [START greet]
         private async void Greet_Click(object sender, RoutedEventArgs e)
         {
             var service = new HelloworldService(new BaseClientService.Initializer()
@@ -48,7 +51,9 @@ namespace HelloWorld
             var response = await service.Greetings.GetGreeting(0).ExecuteAsync();
             ResponseTextBlock.Text = response.Message;
         }
+        // [END greet]
 
+        // [START authgreet]
         private async void AuthGreet_Click(object sender, RoutedEventArgs e)
         {
             // Get or create the user credentials.
@@ -75,6 +80,7 @@ namespace HelloWorld
             // Update a UI control with the response.
             ResponseTextBlock.Text = response.Message;
         }
+        // [END authgreet]
 
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
