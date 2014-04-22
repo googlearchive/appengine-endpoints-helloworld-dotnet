@@ -22,11 +22,13 @@ namespace HelloWorld
 
         private async void List_Click(object sender, RoutedEventArgs e)
         {
+            // [START service]
             // Create the service.
             var service = new HelloworldService(new BaseClientService.Initializer()
                 {
-                    ApplicationName = "Hello World Endpoints Sample",
+                    ApplicationName = "Endpoints Sample",
                 });
+            // [END service]
 
             // Execute the request.
             var response = await service.Greetings.ListGreeting().ExecuteAsync();
@@ -41,7 +43,7 @@ namespace HelloWorld
         {
             var service = new HelloworldService(new BaseClientService.Initializer()
                 {
-                    ApplicationName = "Hello World Endpoints Sample",
+                    ApplicationName = "Endpoints Sample",
                 });
             var response = await service.Greetings.GetGreeting(0).ExecuteAsync();
             ResponseTextBlock.Text = response.Message;
@@ -64,7 +66,7 @@ namespace HelloWorld
             var service = new HelloworldService(new BaseClientService.Initializer()
                 {
                     HttpClientInitializer = credential,
-                    ApplicationName = "Hello World Endpoints Sample",
+                    ApplicationName = "Endpoints Sample",
                 });
 
             // Execute the request.
