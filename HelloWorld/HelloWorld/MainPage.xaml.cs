@@ -32,7 +32,9 @@ namespace HelloWorld
             // [END service]
 
             // Execute the request.
+            // [START execute]
             var response = await service.Greetings.ListGreeting().ExecuteAsync();
+            // [END execute]
 
             // Update a UI control with the response.
             ResponseTextBlock.Text = String.Join(Environment.NewLine,
