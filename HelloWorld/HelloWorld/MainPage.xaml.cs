@@ -1,4 +1,20 @@
-﻿using EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1;
+﻿/*
+Copyright 2014 Google Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+using EndpointsHelloworldDotnetAppspotCom.Apis.Helloworld.v1;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
 using Microsoft.Phone.Controls;
@@ -15,12 +31,40 @@ namespace HelloWorld
         public MainPage()
         {
             InitializeComponent();
-
-            // Sample code to localize the ApplicationBar
-            //BuildLocalizedApplicationBar();
         }
 
+        // [START authgreet]
+        /// <summary>Auth Greets the user using the Hello World service.</summary>
+        private async void AuthGreet_Click(object sender, RoutedEventArgs e)
+        {
+            // Get or create the user credentials.
+            var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                new ClientSecrets
+                {
+                    ClientId = ClientSecretsConsts.ClientId,
+                    ClientSecret = ClientSecretsConsts.ClientSecret,
+                },
+                new[] { HelloworldService.Scope.UserinfoEmail },
+                "user",
+                CancellationToken.None);
+
+            // Create the service.
+            var service = new HelloworldService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = "Endpoints Sample",
+            });
+
+            // Execute the request.
+            var response = await service.Greetings.Authed().ExecuteAsync();
+
+            // Update a UI control with the response.
+            ResponseTextBlock.Text = response.Message;
+        }
+        // [END authgreet]
+
         // [START list]
+        /// <summary>Lists all the Hello World's greetings.</summary>
         private async void List_Click(object sender, RoutedEventArgs e)
         {
             // [START service]
@@ -44,6 +88,7 @@ namespace HelloWorld
         // [END list]
 
         // [START greet]
+        /// <summary>Greets the user using the Hello World service.</summary>
         private async void Greet_Click(object sender, RoutedEventArgs e)
         {
             var service = new HelloworldService(new BaseClientService.Initializer()
@@ -54,50 +99,5 @@ namespace HelloWorld
             ResponseTextBlock.Text = response.Message;
         }
         // [END greet]
-
-        // [START authgreet]
-        private async void AuthGreet_Click(object sender, RoutedEventArgs e)
-        {
-            // Get or create the user credentials.
-            var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-                new ClientSecrets
-                {
-                    ClientId = ClientSecretsConsts.ClientId,
-                    ClientSecret = ClientSecretsConsts.ClientSecret,
-                },
-                new[] { HelloworldService.Scope.UserinfoEmail },
-                "user",
-                CancellationToken.None);
-
-            // Create the service.
-            var service = new HelloworldService(new BaseClientService.Initializer()
-                {
-                    HttpClientInitializer = credential,
-                    ApplicationName = "Endpoints Sample",
-                });
-
-            // Execute the request.
-            var response = await service.Greetings.Authed().ExecuteAsync();
-
-            // Update a UI control with the response.
-            ResponseTextBlock.Text = response.Message;
-        }
-        // [END authgreet]
-
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
-
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
     }
 }
