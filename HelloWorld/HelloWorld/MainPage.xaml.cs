@@ -75,8 +75,8 @@ namespace HelloWorld
                 });
             // [END service]
 
-            // Execute the request.
             // [START execute]
+            // Execute the request to list all greetings.
             var response = await service.Greetings.ListGreeting().ExecuteAsync();
             // [END execute]
 
