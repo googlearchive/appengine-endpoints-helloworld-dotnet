@@ -1,6 +1,12 @@
 appengine-endpoints-helloworld-dotnet
 ======================================
 
+![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+
+This project is no longer actively developed or maintained.
+
+For new work on this check out [dotnet-docs-samples](https://github.com/GoogleCloudPlatform/dotnet-docs-samples/tree/master/endpoints/getting-started)
+
 This application implements a simple client for a hello world sample using Google Cloud Endpoints, App Engine and Windwos Phone.
 
 It relies on [Google APIs client library for .NET][1]
